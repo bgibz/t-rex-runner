@@ -1579,23 +1579,24 @@
 
     /**
      * Animation config for different states.
+     *  adjustment from base TREX position!
      * @enum {Object}
      */
     Trex.animFrames = {
         WAITING: {
-            frames: [44, 0],
+            frames: [44, 0], //848, 893
             msPerFrame: 1000 / 3
         },
         RUNNING: {
-            frames: [88, 132],
-            msPerFrame: 1000 / 12
+            frames: [88, 132], 
+            msPerFrame: 1000 / 8
         },
         CRASHED: {
             frames: [220],
             msPerFrame: 1000 / 60
         },
         JUMPING: {
-            frames: [0],
+            frames: [176],
             msPerFrame: 1000 / 60
         },
         DUCKING: {
